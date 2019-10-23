@@ -48,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 
+//// START OF MY CODE!!!!!!!!!///////
+
+
 .center {
 	display: flex;
 	justify-content: center;
@@ -58,7 +61,7 @@ table {
 	justify-content: space-around;
 }
 
-//// START OF MY CODE!!!!!!!!!///////
+
 
 @nav-color: green;
 @text-font: 1.4rem;
@@ -117,6 +120,10 @@ html, body {
 header {
 	nav {
 		a {
+			@media (max-width: 500px) {
+				font-size: 1.4rem;
+
+			} // end of "a" media
 			margin: @margin;
 			text-decoration: none;
 			font-size: 2rem;
@@ -124,10 +131,7 @@ header {
 			// border: 1px solid black;
 			width: 10vw;
 			text-align: center;
-				@media (max-width: 500px) {
-					font-size: 1.4rem;
 
-				} // end of "a" media
 		}// end of a
 		border-bottom: 1px solid black;
 		.center
@@ -249,3 +253,4 @@ header {
 
 	.standard-media-change
 }//end of middle-section
+
