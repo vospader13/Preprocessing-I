@@ -172,6 +172,7 @@ body {
 header {
   background-color: whitesmoke;
   padding-bottom: 2vh;
+  font-family: 'Jomolhari', serif;
 }
 header nav {
   border-bottom: 1px solid black;
@@ -188,7 +189,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   header nav a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 header h1 {
@@ -217,6 +218,7 @@ header div .profile {
   margin: auto;
   padding: auto;
   background-color: paleturquoise;
+  font-family: 'Liu Jian Mao Cao', cursive;
 }
 .top-section .top-content {
   margin: auto;
