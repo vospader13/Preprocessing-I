@@ -135,6 +135,23 @@ table {
   justify-content: end;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .standard-media-change {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
+}
+@media (max-width: 500px) {
+  .content-media-change {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10vh;
+  }
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -168,6 +185,11 @@ header nav a {
   color: green;
   width: 10vw;
   text-align: center;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.5rem;
+  }
 }
 header h1 {
   font-size: 4rem;
@@ -214,6 +236,15 @@ header div .profile {
   text-align: center;
   padding-bottom: 1vh;
 }
+@media (max-width: 500px) {
+  .top-section .top-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10vh;
+  }
+}
 .top-section .work-history {
   display: flex;
   justify-content: center;
@@ -221,6 +252,14 @@ header div .profile {
   font-size: 2.8rem;
   height: 8vh;
   width: 100vw;
+}
+@media (max-width: 500px) {
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
 }
 .middle-section {
   display: flex;
@@ -245,4 +284,20 @@ header div .profile {
   padding-bottom: 1vh;
   height: 25vh;
   text-align: center;
+}
+.middle-section .right-side .contact-info {
+  margin: auto;
+  width: 40vw;
+  font-size: 1.4rem;
+  padding-bottom: 1vh;
+  height: 25vh;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
 }

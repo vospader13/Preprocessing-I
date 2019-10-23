@@ -66,6 +66,34 @@ table {
 @basic-height: 1vh;
 @h2: 1.8rem;
 @h3: 1.6rem;
+
+.standard-media-change {
+	@media (max-width: 500px) {
+		@h2: 1.4rem;
+		@h3: 1.2rem;
+		@text-font: 1rem;
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		margin-bottom: 10vh;
+
+	}
+}
+.content-media-change {
+	@media (max-width: 500px) {
+		@h2: 1.6rem;
+		@h3: 1.4rem;
+		@text-font: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 10vh;
+	}
+
+	
+}
+
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
@@ -96,6 +124,10 @@ header {
 			// border: 1px solid black;
 			width: 10vw;
 			text-align: center;
+				@media (max-width: 500px) {
+					font-size: 1.5rem;
+
+				} // end of "a" media
 		}// end of a
 		border-bottom: 1px solid black;
 		.center
@@ -145,6 +177,7 @@ header {
 		font-size: @text-font;
 		padding-bottom: @basic-height;
 		height: 25vh;
+		.content-media-change;
 	} //end of top-content
 
 	.work-history{
@@ -155,6 +188,7 @@ header {
 		font-size: @h2+1;
 		height: 8vh;
 		width: 100vw;
+		
 	}
 
 	display: flex;
@@ -164,6 +198,8 @@ header {
 	margin: auto;
 	padding: auto;
 	background-color: paleturquoise;
+
+	.standard-media-change;
 	
 } //end of .top-section
 
@@ -189,6 +225,19 @@ header {
 		
 	} //end of left side
 
+	.right-side {
+		.contact-info {
+		margin: auto;
+		width: 40vw;
+		font-size: @text-font;
+		padding-bottom: @basic-height;
+		height: 25vh;
+		text-align: center;
+		
+		} //end of contact-info
+		
+		
+	}//end of right side
 	display: flex;
 	width: 85vw;
 	justify-content: space-around;
@@ -196,4 +245,6 @@ header {
 	margin: auto;
 	padding: auto;
 	background-color: rgb(136, 155, 236);
+
+	.standard-media-change
 }//end of middle-section
