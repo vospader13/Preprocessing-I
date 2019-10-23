@@ -232,9 +232,17 @@ header div .profile {
   background-color: #889bec;
 }
 .middle-section h2 {
-  width: 100vw;
-  border: 1px solid black;
+  width: 40vw;
   text-align: center;
   font-size: 2.8rem;
   margin: auto;
+  padding-bottom: 1vh;
+}
+.middle-section .left-side .skills {
+  margin: auto;
+  width: 40vw;
+  font-size: 1.4rem;
+  padding-bottom: 1vh;
+  height: 25vh;
+  text-align: center;
 }
